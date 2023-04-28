@@ -124,7 +124,7 @@ require([
         popupTemplate: {
             // autocasts as new PopupTemplate()
             title: "Panoramic picture {Name} ",
-            content: "The panoramic picture {Name} is ajacent to the building {closest_bl}. </br> <b>Click the preview to open:</b> </br> <a href='https://www.personal.psu.edu/nvg5370/geog863/term_project/view.html?s={Name}'><img src='https://www.personal.psu.edu/nvg5370/geog863/term_project/panos/{Name}.tiles/thumb.jpg'></img></a>"
+            content: "The panoramic picture {Name} is ajacent to the building {closest_bl}. </br> <b>Click the preview to open:</b> </br> <a href='https://ngolosov.github.io/CollegeCourtStreetview/view.html?s={Name}'><img src='https://ngolosov.github.io/CollegeCourtStreetview/panos/{Name}.tiles/thumb.jpg'></img></a>"
         },
 
         title: "Panoramic pictures"
@@ -159,7 +159,7 @@ require([
                 In the future I'll need to figure out how to check the layer name in a more appropriate way */
                 if (graphic.attributes['name']) {
                     // Open the new window
-                    url = "https://www.personal.psu.edu/nvg5370/geog863/term_project/view.html?s=" + graphic.attributes['name']
+                    url = "https://ngolosov.github.io/CollegeCourtStreetview/view.html?s=" + graphic.attributes['name']
                     window.open(url, '_blank').focus();
                 }
             });
@@ -272,7 +272,7 @@ require([
     // open the Dojo dialog window with the information about the application
     helpDialog = new Dialog({
         title: "GEOG863 Term project help",
-        content: "<iframe src='https://www.personal.psu.edu/nvg5370/geog863/term_project/help.html' width='100%' height='600' style='border:1px solid black;'></iframe>",
+        content: "<iframe src='https://ngolosov.github.io/CollegeCourtStreetview/help.html' width='100%' height='600' style='border:1px solid black;'></iframe>",
         style: "width: 600px"
     });
     
