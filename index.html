@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Term project - College Court StreetView</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css" />
+	 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css">  
+	 
+    <link rel="stylesheet" href="main.css"></link>
+	<script src="https://js.arcgis.com/4.24/"></script>
+
+
+    <!-- load dojo -->
+
+    <script>
+        require(["dojo/parser", "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dijit/layout/TabContainer", "dojo/domReady!"], function(parser){
+            parser.parse();           
+        });
+    </script>
+	
+	
+	<script src="main.js"></script>
+	
+	
+
+	
+  </head>
+
+  <body class="claro">
+    <div id="viewDiv"></div>
+	    <div id="queryDiv" class="esri-widget">
+   
+   <h2>Select from buildings:</h2>
+	  <p>Building type:</p>
+	  
+	  <select id="bldg_type" class="esri-widget">
+        <option value="%%%">All</option>
+		<option value="Studio">Studio</option>
+		<option value="1BR">One bedroom</option>
+      </select>
+	  
+	  
+      <p>Heating / Cooling type:</p>
+	  	  <select id="hvac_type" class="esri-widget">
+        <option value="%%%">All</option>
+		<option value="Window AC">Window AC</option>
+		<option value="Central air">Central Air</option>
+      </select>
+	  
+	   <p>Parking places &ge;:</p>
+	   <input type='text' id='parking' value='0'></input>
+	  
+	  	  <p>Filter StreetView layer?
+
+	   <input type='checkbox' id='filter_streetview' checked='1' value='1'></input> </p>
+   
+   
+      <h2>Filter StreetView:</h2>
+	  <p>Display images near building:</p>
+	  
+	  <select id="streetview_bldg" class="esri-widget">
+	    <option value="%%%">All</option>
+        <option value="A">A</option>
+		<option value="B">B</option>
+		<option value="C">C</option>
+		<option value="D">D</option>
+		<option value="E">E</option>
+		<option value="F">F</option>
+		<option value="227-245 Blue Course Dr.">227-245 Blue Course Dr.</option>
+		
+      </select>
+   <br/>
+   <b>Enable/disable layers:</b>
+   
+    </div>
+	
+ 
+
+  </body>
+</html>

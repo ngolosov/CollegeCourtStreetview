@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+  </head>
+
+  <body>
+ 
+ <h2> College Court Appartments Diy-Streetview </h2>
+ 
+<p>This web-application provides access to a DIY 360 panoramic tour a-la Google Streetview for the College Court Appartments in State College, PA where I currently live.</p>
+<h3>How to use the app:</h3>
+<li>Click on the blue lines opens a panoramic viewer. You can navigate there by using arrow hotspots, using a double click or WASD keys(like in computer games) to move beetween panoramic spheres.</li>
+<li>Also you might want to enable the "Panoramic pictures" layer to view individual panoramic locations by clicking the eyeball sign in the layer list widget. Clicking the individual panoramic point will open the pop-up with the preview image. If you click the preview image, it will open the panoramic viewer at the specific panoramic picture.</li>
+<li>In addition to panoramic viewing, the app implements a querying feature. You could display the particular buildings, satisfying the selected parameters, by changing the value of the "Building type", "Heating/Cooling type" or "Parking places" parameters. If "Filter StreetView layer?" check-box is enabled, the application will display the streetview coverage only adjacent to the displayed buildings. Otherwise, the full streetview layer will be displayed, regardless of the displayed buildings.
+
+<li>The Filter StreetView drop-down filters the streetview layer to display the coverage arount the specific building. This filter works independently of the options I mention above.</li>
+
+<li>Clicking the buildings and panoramic points(when the layer is visible) will open an information pop-up. Clicking the "StreetView coverage" layer will open the panoramic viewer at the desired geographic location.</li>
+
+<h4>Methods:</h4>
+<p>I developed this web application using ArcGIS API for JavaScript, and KRPano panoramic viewer. The motivation for this project was to refresh my skills doing the virtual tours and to review how to integrate the KRPano with the ArcGIS web-maps. I collected the images of College Court complex on 10/22/2022 using an inexpensive consumer-grade <a href ="https://theta360.com/en/about/theta/s.html" target="_blank">Ricoh Theta S</a> panoramic camera. Images were collected approximately every 10 meters. Camera was triggered by GPS coordinates using a simple Python script, run on Android smartphone in QPython environment. <a href = "https://krpano.com/home/" target = "_blank">KRPano</a> is a proprietary HTML5 web panorama viewer, used with a commertial license.</p> The KRPano streetview-like navigation plug-in was developed by KRPano forum user <a href ="https://krpano.com/forum/wbb/index.php?page=User&userID=1326" target = "_blank">Umalo</a>. GIS data, such as building footprints, panoramic tour coverage and individual pictures location with the associated attributes as well the linking of the panoramas were created by the author. 
+  </body>
+</html>
