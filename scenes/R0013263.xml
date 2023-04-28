@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+	<image>
+		<cube url="../panos/R0013263.tiles/pano_%s.jpg"/>
+	</image>
+	<gps_data name="R0013263" total="2">
+		<point name="s1" pt="R0013264" pt_bear="326"/>
+		<point name="s2" pt="R0013262" pt_bear="144"/>
+	</gps_data>
+</krpano>
