@@ -1,5 +1,5 @@
 # College Court StreetView
-View the live application at at https://ngolosov.github.io/CollegeCourtStreetview/
+View the live application at https://ngolosov.github.io/CollegeCourtStreetview/
 
 This is a web application that displays College Court StreetView using the ArcGIS API for JavaScript. It allows users to interact with a map, view panoramic pictures of the appartment complex and navigate between them in a streetview-like manner, filter buildings based on various attributes, and enable/disable layers.
 
